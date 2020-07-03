@@ -5,7 +5,7 @@ import {Home, Payouts} from './components/pages';
 import {setUser} from './actions';
 import {connect} from 'react-redux';
 
-const name = 'Abhijit';
+let name = 'Abhijit Mitra';
 
 
 const App = ({setUser}) => {
