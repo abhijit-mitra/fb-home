@@ -5,6 +5,8 @@ import {Home, Payouts} from './components/pages';
 import {setUser} from './actions';
 import {connect} from 'react-redux';
 
+const name = 'Abhijit';
+
 const App = ({setUser}) => {
   useEffect(()=>{
     setUser();
