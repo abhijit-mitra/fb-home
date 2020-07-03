@@ -19,7 +19,7 @@ const Home = (props) => {
       </div>
       <div className="row align-items-center no-gutters">
         <div className="offset-md-2 col-md-4 offset-1 col-11">
-          <div className="font-26 black">Welcome To Hi</div>
+          <div className="font-26 black">Welcome To the</div>
           <div className="font-54 black fw-900">Payment Tranfer</div>
           <div className="font-54 black fw-900">Management</div>
           <GAuth {...props} />
