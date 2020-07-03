@@ -1,0 +1,30 @@
+.dropdown {
+  position: absolute;
+  top: 48px;
+  right: 0px;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 0px;
+  border-radius: 10px;
+  z-index: 1;
+  background-color: #1f2d3c;
+}
+
+.menuItem {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.icon {
+  color:#fff;
+}
+
+.menuItem:hover {
+  color: #113dbc;
+  background-color: whitesmoke;
+}
+
+.menuItem:hover > i.icon {
+  color: #113dbc;
+  background-color: whitesmoke;
+}

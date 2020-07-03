@@ -1,0 +1,23 @@
+.button {
+  border-radius: 1rem;
+  border: 1px solid #eee;
+}
+
+.button:hover{
+  border: 1px solid #e0d5d5 !important;
+}
+
+.icon {
+  width: 27px;
+  height: 27px;
+}
+
+.line {
+  background-color: #eee;
+  height: 0.1rem;
+}
+
+.logo {
+  width: 3.7rem;
+  height: 3.7rem;
+}
