@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react';
 import PropTypes from 'prop-types';
 import {Switch, Route, Link} from 'react-router-dom';
-import {Home, Payouts} from './components/pages';
 import {setUser} from './actions';
 import {connect} from 'react-redux';
 
@@ -19,23 +18,23 @@ const App = ({setUser}) => {
   }, []);
   return (
     <div className='container'>
-        <div className='w-100 py-3 border br-10 mb-5'>
+      <div className='w-100 py-3 border br-10 mb-5'>
         <div className='row'>
-        <div className='col-md-2 d-flex justify-content-center'>
-          <Link to={'/'}>
+          <div className='col-md-2 d-flex justify-content-center'>
+            <Link to={'/'}>
             Home
-          </Link>
-        </div>
-        <div className='col-md-2'>
-          <Link to={'/about'}>
+            </Link>
+          </div>
+          <div className='col-md-2'>
+            <Link to={'/about'}>
             About
-          </Link>
-        </div>
-        <div className='col-md-2'>
-          <Link to={'/career'}>
+            </Link>
+          </div>
+          <div className='col-md-2'>
+            <Link to={'/career'}>
             Career
-          </Link>
-        </div>
+            </Link>
+          </div>
         </div>
       </div>
       <div className='mb-5'>
