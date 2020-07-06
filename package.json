@@ -7,12 +7,8 @@
     "build:stg": "env-cmd -f .env.stg react-scripts build",
     "build:prod": "env-cmd -f .env.prod react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "pretest": "eslint --fix"
+    "eject": "react-scripts eject"
   },
-  "pre-commit": [
-    "pretest"
-  ],
   "devDependencies": {
     "@babel/parser": "^7.7.5",
     "babel-eslint": "^10.0.3",
@@ -20,6 +16,8 @@
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-react": "^7.18.3",
     "http-server": "^0.12.3",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
     "pre-commit": "^1.2.2",
     "react-scripts": "3.4.1"
   },
@@ -48,5 +46,14 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "./src/*.json": "eslint --cache --fix"
+  }
 }
